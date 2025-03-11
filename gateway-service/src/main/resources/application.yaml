@@ -1,8 +1,8 @@
 spring:
   application:
-    name: ai-service
+    name: gateway-service
   config:
-    import: nacos:ai-service-dev.yaml
+    import: nacos:gateway-service-dev.yaml
   cloud:
     nacos:
       discovery:

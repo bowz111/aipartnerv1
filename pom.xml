@@ -13,6 +13,7 @@
     <!--引入其他的服务 -->
     <modules>
         <module>ai-service</module>
+        <module>order-service</module>
     </modules>
 
     <properties>

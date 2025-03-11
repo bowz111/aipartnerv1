@@ -1,8 +1,8 @@
 spring:
   application:
-    name: ai-service
+    name: order-service
   config:
-    import: nacos:ai-service-dev.yaml
+    import: nacos:order-service-dev.yaml
   cloud:
     nacos:
       discovery:

@@ -1,17 +1,14 @@
-package com.hjx.aiservice;
+package com.hjx.orderservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
-import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
 @RefreshScope
-@EnableFeignClients
-public class AiServiceApplication {
-
+public class OrderServiceApplication {
     public static void main(String[] args) {
-        SpringApplication.run(AiServiceApplication.class, args);
+        SpringApplication.run(OrderServiceApplication.class, args);
     }
 
 }

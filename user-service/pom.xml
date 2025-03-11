@@ -9,33 +9,49 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.hjx</groupId>
-    <artifactId>common-module</artifactId>
+    <artifactId>user-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>common-module</name>
-    <description>common-module</description>
+    <name>user-service</name>
+    <description>user-service</description>
 
     <properties>
         <java.version>17</java.version>
-        <jwt.version>4.4.0</jwt.version>
     </properties>
-
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <!-- jwt -->
         <dependency>
-            <groupId>com.auth0</groupId>
-            <artifactId>java-jwt</artifactId>
-            <version>${jwt.version}</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
+
+        <!-- nacos-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+        <!--公共模块-->
+        <dependency>
+            <groupId>com.hjx</groupId>
+            <artifactId>common-module</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
     </dependencies>
 
     <build>

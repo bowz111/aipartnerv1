@@ -93,11 +93,11 @@ public class GlobalFilterConfig implements GlobalFilter, Ordered {
      * @return 是返回true，否返回false。
      */
     private boolean shouldNotFilter(String url) {
-       if (url.startsWith("/user/login")) {
-           return true;
-       }
-       return false;
-        //return true;
+       // if (url.startsWith("/user/login")) {
+       //     return true;
+       // }
+       // return false;
+        return true;
     }
 
 }

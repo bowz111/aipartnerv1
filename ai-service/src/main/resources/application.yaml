@@ -19,3 +19,18 @@ langchain4j:
         #model-name: deepseek-v3
         #model_name: qwen-max
         model-name: qwen-max-latest
+      embedding-model:
+        api-key: sk-ce9c611e301c4055b203fdec4aa10544
+        model-name: multimodal-embedding-v1
+
+pgvector:
+  database: springai
+  host: 192.168.245.129
+  port : 5432
+  user: postgres
+  password: 123456
+  table: my_embeddings
+
+search:
+  api-key: APiYq25kdUvM9RJJqQux7jLo
+  engine: baidu
